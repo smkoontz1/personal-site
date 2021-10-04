@@ -1,0 +1,13 @@
+/* Example custom style */
+.red-text {
+  color: red;
+}
+
+/* Responsive bg image example */
+.main-bg-image {
+  background-image: url('../images/bg_trees_1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
