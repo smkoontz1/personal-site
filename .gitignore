@@ -6,3 +6,9 @@ _site/
 
 # NodeJS
 node_modules/
+
+# Custom
+.vscode/
+.DS_Store
+
+assets/images/

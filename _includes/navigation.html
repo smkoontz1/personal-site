@@ -11,7 +11,8 @@
     SENSE OF STEVE
   </div>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="px-2">
+    <a class="nav-item"
+      href="{{ item.link }}">
       {{ item.name | upcase }}
     </a>
   {% endfor %}
