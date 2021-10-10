@@ -4,3 +4,4 @@
 
 plugins:
   - jekyll-postcss
+  - jekyll-octicons
