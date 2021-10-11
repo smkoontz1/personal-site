@@ -7,8 +7,10 @@
   </head>
   <body>
     <div class="main-bg-image">
-      <div class="fixed top-0">
+      <div class="fixed top-0 z-10">
         <div class="
+                absolute
+                top-0
                 flex
                 flex-row
                 justify-center
@@ -25,24 +27,25 @@
                 w-screen
                 bg-gradient-to-b
                 from-gray-50
+                z-0
               ">
         </div>
       </div>
       <div class="container mx-auto">
         {{ content }}
       </div>
-    </div>
-    <div class="fixed bottom-0">
-      <div class="
-              absolute
-              bottom-16
-              h-8
-              w-screen
-              bg-gradient-to-t
-              from-black
-            ">
+      <div class="fixed bottom-0 z-10">
+        <div class="
+                absolute
+                bottom-16
+                h-8
+                w-screen
+                bg-gradient-to-t
+                from-black
+              ">
+        </div>
+        <div class="absolute bottom-0 h-16 w-screen bg-black"></div>
       </div>
-      <div class="absolute bottom-0 h-16 w-screen bg-black"></div>
     </div>
   </body>
 </html>
