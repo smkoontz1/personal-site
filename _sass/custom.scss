@@ -44,3 +44,40 @@
     ease-in
     transform hover:translate-x-1
 }
+
+.post-header {
+  h1 {
+    @apply
+      text-2xl
+      font-semibold
+      uppercase
+  }
+}
+
+.post {
+  h1 {
+    @apply
+      text-2xl
+      font-semibold
+      uppercase
+      mb-5
+  }
+
+  h2 {
+    @apply
+      text-lg
+      font-semibold
+      uppercase
+  }
+
+  p {
+    @apply
+      mt-5
+  }
+
+  a {
+    @apply
+      underline
+      text-gray-700
+  }
+}
