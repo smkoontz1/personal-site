@@ -3,8 +3,16 @@
     SENSE <span class="ml-1 mr-1 text-xl">OF</span> STEVE
   </a>
   {% for item in site.data.navigation %}
-    <a class="nav-item {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}" target="_self">
-      {{ item.name | upcase }}
+    <a
+      class="nav-item
+        {% if page.url == item.link %}
+          active
+        {% elsif page.type == item.name %}
+          active
+        {% endif %}"
+      href="{{ item.link }}"
+      target="_self">
+        {{ item.name | upcase }}
     </a>
   {% endfor %}
 </nav>

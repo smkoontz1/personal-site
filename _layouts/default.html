@@ -10,7 +10,13 @@
 </head>
 
 <body>
-  <div class="main-bg-image">
+  <div class="
+        {% if page.type == "Blog" %}
+          blog-bg-image
+        {% else %}
+          main-bg-image
+        {% endif %}
+  ">
     <div class="fixed top-0 z-10">
       <div class="
                 absolute

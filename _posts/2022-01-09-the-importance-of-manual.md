@@ -2,6 +2,7 @@
 layout: post
 author: Steven Koontz
 title: The Importance of Manual
+type: Blog
 excerpt_separator: <!--more-->
 ---
 
