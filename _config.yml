@@ -2,6 +2,8 @@
 # baseurl: "" # the subpath of your site, e.g. /blog
 # title: "" # the name of your site, e.g. ACME Corp.
 
+title: "Sense of Steve"
+
 plugins:
   - jekyll-postcss
   - jekyll-octicons
