@@ -1,6 +1,46 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-
-<h1>{{ "Hello World" | downcase }}<h1>
+<div class="flex flex-col justify-center items-center">
+  <div class="mt-24 mb-24">
+    <ul>
+      <li class="max-w-2xl bg-gray-50 mb-5 p-5 rounded-md">
+        <div class="post-header">
+          <h1 class="mb-5">
+            Welcome
+          </h1>
+          <p>
+            This site is still very much in the works.
+            I plan to use it as place to share my thoughts in the blog.
+            In the future, I will also be adding my photography and software portfolios.
+            Thanks for stopping by!
+          </p>
+        </div>
+      </li>
+      {% for post in site.posts %}
+      <li class="max-w-2xl bg-gray-50 mb-5 p-5 rounded-md">
+        <div class="post-header">
+          <h1>
+            {{ post.title }}
+          </h1>
+          <p>
+            {{ post.date | date_to_string }}
+          </p>
+        </div>
+        <div class="post-excerpt">
+          <p class="mt-5">
+            {{ post.excerpt }}
+          </p>
+        </div>
+        <div class="flex flex-row mt-5 justify-end">
+          <a class="read-more-link" href="{{ post.url }}">
+            Read More
+            {% octicon arrow-right height:24 %}
+          </a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

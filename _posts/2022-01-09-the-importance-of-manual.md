@@ -2,6 +2,7 @@
 layout: post
 author: Steven Koontz
 title: The Importance of Manual
+excerpt_separator: <!--more-->
 ---
 
 ## Why do we automate?
@@ -9,6 +10,8 @@ title: The Importance of Manual
 This is a particularly controversial question for me to ask given that my field involves continuing to push the envelope of what is possible with automation. However, I still think it's an important question, and I think the answer lies in the concepts of "problems" and "patience".
 
 In his book, [The Subtle Art of Not Giving a F*ck](https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1486908970&sr=1-1&keywords=the+subtle+art+of+not+giving+a+f---+mark+manson&linkCode=sl1&tag=movquo-20&linkId=e40c57248cf654eb6b3611c43a0c6dcc), Mark Manson suggests, "Problems never stop; they merely get exchanged and/or upgraded." Time is a finite resource, whereas there appear to be no shortage of problems that need solving. It would seem that the entire point of computer science and software engineering is to identify common problems that can be automated, so that we need not spend time on them, and the subsequent problems are "upgraded".
+
+<!--more-->
 
 Personal finance is a great example. Let's say you're using a checkbook to track your transactions. The problem is easy enough to understand, record the transactions so that you have a financial record to refer to. However, this presents other problems. What if you lose the checkbook? What if you write a 0 that looks like a 6? How much time does it take you to go through each individual receipt, read the number, write it down, etc? So, we automated it. Tools like Quicken came about that turned the checkbook into a spreadsheet with features that included integrated budgeting, spending habits reporting, etc. However, there are still problems, simply "upgraded" ones. What if you lose the file? What if your computer dies and you don't have a backup? Recently, we have gone a step further and added integration directly with the banks, so you don't even have to record the transactions anymore, they are simply pushed to your personal finance software. We've gone from a pen and paper solution that would take a couple hours every weekend to a button click on our phones a couple times a month just to make sure we're staying in budget.
 
