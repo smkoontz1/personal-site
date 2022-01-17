@@ -12,6 +12,14 @@
   background-size: cover;
 }
 
+.blog-bg-image {
+  background-image: url('../images/blog_mountains_1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .nav-item {
   @apply
     px-2
@@ -43,4 +51,68 @@
     duration-200
     ease-in
     transform hover:translate-x-1
+}
+
+.post-header {
+  h1 {
+    @apply
+      text-xl
+      font-semibold
+      uppercase
+  }
+}
+
+.post-excerpt {
+  h1 {
+    @apply
+      text-xl
+      font-semibold
+      uppercase
+  }
+
+  h2 {
+    @apply
+      text-base
+      font-semibold
+      uppercase
+  }
+
+  p {
+    @apply
+      mt-5
+  }
+
+  a {
+    @apply
+      underline
+      text-gray-700
+  }
+}
+
+.post {
+  h1 {
+    @apply
+      text-xl
+      font-semibold
+      uppercase
+      mb-5
+  }
+
+  h2 {
+    @apply
+      text-base
+      font-semibold
+      uppercase
+  }
+
+  p {
+    @apply
+      mt-5
+  }
+
+  a {
+    @apply
+      underline
+      text-gray-700
+  }
 }
