@@ -7,18 +7,17 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   </link>
   <base target="_blank">
+
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 </head>
 
 <body>
   <div class="
-        {% if page.type == "Blog" %}
-          blog-bg-image
-        {% else %}
-          main-bg-image
-        {% endif %}
-  ">
-    <div class="fixed top-0 z-10">
-      <div class="
+        {% if page.type == " Blog" %} blog-bg-image {% else %} main-bg-image {% endif %} ">
+    <div class=" fixed top-0 z-10">
+    <div class="
                 absolute
                 top-0
                 flex
@@ -28,9 +27,9 @@
                 mb-10
                 bg-gray-50
                 h-16">
-        {% include navigation.html %}
-      </div>
-      <div class="
+      {% include navigation.html %}
+    </div>
+    <div class="
                 absolute
                 top-16
                 h-8
@@ -39,15 +38,15 @@
                 from-gray-50
                 z-0
               ">
-      </div>
     </div>
-    <div class="container mx-auto">
-      <div class="min-h-screen">
-        {{ content }}
-      </div>
+  </div>
+  <div class="container mx-auto">
+    <div class="min-h-screen">
+      {{ content }}
     </div>
-    <div class="fixed bottom-0 z-10">
-      <div class="
+  </div>
+  <div class="fixed bottom-0 z-10">
+    <div class="
                 absolute
                 bottom-16
                 h-8
@@ -55,8 +54,8 @@
                 bg-gradient-to-t
                 from-black
               ">
-      </div>
-      <div class="
+    </div>
+    <div class="
                 absolute
                 bottom-0
                 flex
@@ -65,9 +64,9 @@
                 h-16
                 w-screen
                 bg-black">
-        {% include footer.html %}
-      </div>
+      {% include footer.html %}
     </div>
+  </div>
   </div>
 </body>
 
