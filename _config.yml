@@ -3,6 +3,7 @@
 # title: "" # the name of your site, e.g. ACME Corp.
 
 title: "Sense of Steve"
+footer_text: "All rights reserved &copy; Steven Koontz 2022"
 
 plugins:
   - jekyll-postcss

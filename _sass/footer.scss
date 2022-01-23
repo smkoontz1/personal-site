@@ -1,0 +1,38 @@
+.footer-container {
+  @apply
+    fixed
+    bottom-0
+    z-10
+}
+
+.footer-bar {
+  @apply
+    absolute
+    bottom-0
+    flex
+    flex-row
+    items-center
+    h-16
+    w-screen
+    bg-black
+}
+
+.footer-gradient {
+  @apply
+    absolute
+    bottom-16
+    h-8
+    w-screen
+    bg-gradient-to-t
+    from-black
+}
+
+.footer-content {
+  p {
+    @apply
+      text-white
+  }
+
+  @apply
+    ml-8
+}
