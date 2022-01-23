@@ -13,11 +13,23 @@
   }
 }
 
-.read-more-link {
+.main-container {
   @apply
-    mr-5
-    transition
-    duration-200
-    ease-in
-    transform hover:translate-x-1
+    container
+    mx-auto
+    min-h-screen
+}
+
+.content-container {
+  @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+}
+
+.content {
+  @apply
+    mt-24
+    mb-24
 }

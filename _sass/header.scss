@@ -1,0 +1,69 @@
+.header-container {
+  @apply
+    fixed
+    top-0
+    z-10
+}
+
+.header-gradient {
+  @apply
+    absolute
+    top-16
+    h-8
+    w-screen
+    bg-gradient-to-b
+    from-gray-50
+    z-0
+}
+
+.nav-bar {
+  @apply
+    absolute
+    top-0
+    flex
+    flex-row
+    justify-center
+    items-center
+    w-screen
+    mb-10
+    bg-gray-50
+    h-16
+    p-2
+}
+
+.nav-logo {
+  &.inner {
+    @apply
+      ml-1
+      mr-1
+      text-xl
+  }
+  
+  @apply
+    text-3xl
+    mr-10
+}
+
+.nav-item {
+  @apply
+    px-2
+    m-2
+    border-black
+    border-t-2
+    border-b-2
+    border-opacity-0;
+  
+  @apply
+    transition
+    duration-200
+    ease-in
+    hover:border-opacity-100
+    transform
+    hover:scale-110;
+
+  &.active {
+    @apply
+      border-opacity-100
+      scale-110;
+  }
+}

@@ -49,3 +49,12 @@
       text-gray-700
   }
 }
+
+.read-more-link {
+  @apply
+    mr-5
+    transition
+    duration-200
+    ease-in
+    transform hover:translate-x-1
+}
