@@ -5,6 +5,7 @@ title: Blog
 <div class="flex flex-col justify-center items-center">
   <div class="mt-24 mb-24">
     <ul>
+      <!-- This wecome li will go away eventually -->
       <li class="max-w-2xl bg-white bg-opacity-95 mb-5 p-5 rounded-md">
         <div class="post-header">
           <h1 class="mb-5">
@@ -22,7 +23,7 @@ title: Blog
         </div>
       </li>
       {% for post in site.posts %}
-      <li class="max-w-2xl bg-white bg-opacity-95 mb-5 p-5 rounded-md">
+      <li class="post-container excerpt">
         <div class="post-header">
           <h1>
             {{ post.title }}
@@ -31,8 +32,8 @@ title: Blog
             {{ post.date | date_to_string }} - {{ post.author }}
           </p>
         </div>
-        <div class="post-excerpt">
-          <p class="mt-5">
+        <div class="post-body">
+          <p>
             {{ post.excerpt }}
           </p>
         </div>

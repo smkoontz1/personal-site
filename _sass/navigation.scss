@@ -1,0 +1,23 @@
+.nav-item {
+  @apply
+    px-2
+    m-2
+    border-black
+    border-t-2
+    border-b-2
+    border-opacity-0;
+  
+  @apply
+    transition
+    duration-200
+    ease-in
+    hover:border-opacity-100
+    transform
+    hover:scale-110;
+
+  &.active {
+    @apply
+      border-opacity-100
+      scale-110;
+  }
+}
