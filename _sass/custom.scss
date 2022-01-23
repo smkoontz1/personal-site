@@ -1,23 +1,16 @@
-/* Example custom style */
-.red-text {
-  color: red;
-}
-
-/* Responsive bg image example */
-.main-bg-image {
-  background-image: url('../images/bg_trees_1_web.jpg');
+.img-full-screen {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+  
+  &.main-bg {
+    background-image: url('../images/bg_trees_1_web.jpg');
+  }
 
-.blog-bg-image {
-  background-image: url('../images/blog_mountains_1_web.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  &.blog-bg {
+    background-image: url('../images/blog_mountains_1_web.jpg');
+  }
 }
 
 .read-more-link {
