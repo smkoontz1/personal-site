@@ -50,6 +50,30 @@
   }
 }
 
+.post-image-container {
+  @apply
+    flex
+    justify-center
+}
+
+.post-image {
+  max-width: 50%;
+
+  p {
+    @apply
+      text-sm
+      text-center
+      mb-0
+      mt-2
+  }
+
+  @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+}
+
 .read-more-link {
   @apply
     mr-5

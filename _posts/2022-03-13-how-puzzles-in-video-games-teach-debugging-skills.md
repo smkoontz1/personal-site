@@ -1,0 +1,32 @@
+---
+layout: post
+author: Steven Koontz
+title: How Puzzles in Video Games Teach Debugging Skills
+type: Blog
+---
+
+As a kid, I played a lot of video games. My first real experience with games came when our family borrowed a Nintendo 64 from my aunt and uncle. It came with a few classic games including [The Legend of Zelda: Ocarina of Time](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time) and [Banjo Kazooie](https://en.wikipedia.org/wiki/Banjo-Kazooie). When I was younger, I remember finding these games quite intriguing, albeit very challenging. I don't think I got past even the first few levels of these games until I was much older. What was it that made them so challenging? Any time a game has a puzzle you have to solve, or a secret path you have to find, and the solution to moving forward is less than obvious, it is very easy to get stuck.
+
+Looking at Banjo Kazooie, a 3D platforming game all about collecting things, your primary objective is to collect "Jiggies" (jigsaw puzzle pieces used to unlock later parts of the game). You do this by exploring the various levels accessible from the hub world.
+
+{% include post_image.html src="https://static.wikia.nocookie.net/banjokazooie/images/b/b9/Banjo_kazooie_jiggy_dance.gif" alt="Banjo and Kazooie collect a Jiggy." desc="Banjo and Kazooie collect a Jiggy." %}
+
+Each level has 10 Jiggies to find, and each Jiggy is pretty well hidden. Often, you'll have to complete a mini game or solve a puzzle to obtain a Jiggy. Others are simply tucked away in the far reaches of the map. To make it interesting, you can collect Jiggies in any order. This added freedom means that as you go through these levels, you'll often get about seven or eight Jiggies fairly easily. This is usually enough to unlock later parts of the game and allow you to move forward, but if you want to truly complete the level, you have to find all 10.
+
+The trick is that you've likely already found all the obvious Jiggies, so these last few aren't obvious. How do you find something you're looking for when you have no idea where to start looking? My strategy in these moments was to analyze the level and rule out which parts of it I knew I was "done" with. If I had already talked to the giant turtle, solved his puzzle, and explored around him, I could pretty safely assume I didn't need to bother with that section of the level. Doing this narrowed the surface area I had to consider when asking the question, "What did I miss?" Given enough time scrutinizing every tiny detail of the level, I would eventually have the "aha!" moment as I discovered what I hadn't seen before and found the hidden collectible.
+
+Switching to a game like The Legend of Zelda: Ocarina of Time (for brevity, I'll refer to it as Zelda from here on), its levels are far less open, each containing a dungeon. The order in which you tackle them is up to you, but once you enter a dungeon, the way you progress through it is fairly linear. As you go through a dungeon, you solve puzzles and uncover secrets which alter the layout of the dungeon, making doors open, treasure chests appear, etc.
+
+In this type of game, it is also very common to get stuck, but not because of an inability to find all the collectibles, rather an inability to find a secret within a dungeon. A famous example of this is the eye puzzle. Link (the protagonist in Zelda) gets locked in a room where there is seemingly no way out. You've recently acquired a bow at this stage, and with careful observation, you'll notice an eye on the wall. If you shoot it, the eye closes and a door opens for you.
+
+{% include post_image.html src="https://jegged.com/img/Games/Legend-of-Zelda-Ocarina-of-Time/Walkthrough/1312-Gerudo-Training-Ground-Golden-Eye.png" alt="Link aims his bow at eye relic on wall." desc="Link aims his bow at eye relic on wall." %}
+
+Another example of a challenging puzzle in Zelda is when you have to find a secret passage that is hidden beneath one of a handful of headstones, and all you can do is check each until you find the one that moves, exposing the entrance.
+
+As a kid, when I would play video games and get stuck in scenarios like these, if I wanted to keep playing the game, I had no choice but to learn how to solve the puzzle. The only way to do that was to learn to look at the levels objectively. What was I absolutely certain of? What were some assumptions I had made that maybe didn't hold true and needed revisiting? In almost every case, I had overlooked some detail that was right under my nose. With a bit more careful observation, I was usually able to figure out what I had missed, and the more I unblocked myself in games, the better I got at thinking like a video game player, and the faster I was able to solve similar puzzles in the future.
+
+As a software developer, I have begun to appreciate how practicing these techniques of reductive problem solving have made me better at debugging my code. Often, when something breaks in software, it feels a lot like getting stuck in a video game. No developer ever expects their code to break. After all, they wrote it correctly! Still, it breaks nonetheless and you're faced with a red error message. If you want to keep playing, you have to solve the puzzle to move forward. Sometimes, the error message tells you exactly what's wrong. Other times it doesn't. Sometimes, your error isn't in your code, it's in your logic.
+
+With so many possibilities, it is not often easy to figure out what is causing your error. What do you do? Start with what you know you can rule out. Come up with a way to test your software so that you can rule out different pieces of it causing the issue. The more you can isolate the problem, the easier it is to solve. If can figure out which things are definitely _not_ causing your problem, it makes it much easier to figure out what _is_ causing your problem.
+
+Debugging is one of the necessary evils in software development. Many newer developers dread seeing error messages in their console, but debugging doesn't have to be a chore. Depending on how you look at it, debugging software can be just as fun as collecting puzzle pieces or searching for the special artifact on the wall you have to shoot.
